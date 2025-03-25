@@ -11,7 +11,8 @@ html{
 
 
 body{
-    background-color: white;
+    background-color: whitesmoke;
+    color:#1B1B1B;
     font-family: "Poppins";
 }
 
@@ -21,11 +22,11 @@ body{
     align-items: center;
     position: fixed;
     width: 100vw;
-    padding-top: 10px;
     z-index: 1;
 }
 nav{
-    transition: width 1s, box-shadow 2s;
+    width: 100vw;
+    transition: width .7s, box-shadow 2s , margin-top .2s, border-radius 1.5s;
     padding: 10px 0;
     background-color: white;
     display: flex;
@@ -34,6 +35,7 @@ nav{
     border-bottom: 1px solid rgb(223, 223, 223);
     font-size: 12.5px;
     font-weight: 400;
+    color: #1B1B1B;
 }
 
 .navPro{
@@ -60,7 +62,7 @@ nav h1{
     font-weight: 200;
 }
 nav ul{
-    transition: width 1s;
+    transition: width .7s;
     width: 250px;
     display: flex;
     justify-content: space-around;
@@ -71,10 +73,10 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: black;
+    color: #1B1B1B;
 }
 nav ul li a:hover{
-    color:rgb(91, 91, 91);
+    color:#595f39;
 }
 
 .acc{
@@ -84,7 +86,7 @@ nav ul li a:hover{
     width: 100px;
     align-items: center;
     overflow: hidden;
-    transition: width 1s;
+    transition: width .7s;
 }
 .acc i{
     margin: 0 10px;
@@ -92,10 +94,9 @@ nav ul li a:hover{
 
 
 h1{
-    color: white;
     font-size: 60px;
     font-weight: 600;
-    mix-blend-mode: difference;
+    
 }
 #home{
     height: 100vh;
@@ -103,10 +104,9 @@ h1{
     align-items: center;
     justify-self: center
 } #home h1{
-    color: white;
     font-size: 60px;
     font-weight: 600;
-    mix-blend-mode: difference;
+    
 }
 #about{
     height: 100vh;
@@ -114,10 +114,9 @@ h1{
     align-items: center;
     justify-self: center
 } #about h1{
-    color: white;
     font-size: 60px;
     font-weight: 600;
-    mix-blend-mode: difference;
+    
 }
 #contact{
     height: 100vh;
@@ -125,8 +124,16 @@ h1{
     align-items: center;
     justify-self: center
 } #contact h1{
-    color: white;
     font-size: 60px;
     font-weight: 600;
-    mix-blend-mode: difference;
+    
+}
+
+@media only screen and (max-width: 500px){
+    .navPro{
+        width: 30px;
+    }
+    .navPro h1 {
+        font-size: 0;
+    }
 }
